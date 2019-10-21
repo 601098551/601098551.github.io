@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="代写完成–Java GUI + JDBC 连接 Mysql: 咖啡馆人员管理系统
+
+Your dance instructor has asked you to design a quick and easy program to keep track of the some pertinent data for the dancers at Café Dansa Club, an establishment offering classes in various styles of dancing. Currently no such program exists and it is difficult to update the information of the dancers.
+Write a Java program that allows the user to manage a simple dancers’ database with ability to display, add, edit/modify, and delete the dancers who frequent the Café Dansa Club. Sample GUI is provided as one example of an implementation. There is a lot of flexibility however for your vision of how to design and implement this database, as long as your implementation has all of the required functionality.">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Café Dansa Database"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Hexo"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content=""/>
+    
+
+    <!-- Title -->
+    
+    <title>Café Dansa Database - Hexo</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!--Favicon-->
+    
+
+</head>
+
+<body>
+
+<!-- Menu -->
+<!-- Navigation -->
+<header>
+    <div class="logo">
+        <a href="/">Hexo</a>
+    </div><!-- end logo -->
+
+    <div id="menu_icon"></div>
+    <nav>
+        <ul>
+            
+            <li>
+                <a href="/">主页</a>
+            </li>
+            
+            <li>
+                <a href="/archives">档案</a>
+            </li>
+            
+        </ul>
+    </nav><!-- end navigation menu -->
+
+    <div class="footer clearfix">
+        <ul class="social clearfix">
+            
+            
+                <li><a href="https://www.facebook.com/" class="fb" target="_blank" data-title="Facebook"></a></li>
+            
+            
+                <li><a href="https://www.behance.net/" class="behance" target="_blank" data-title="Behance"></a></li>
+            
+            
+                <li><a href="https://plus.google.com/+Pixelhint/posts" class="google" target="_blank" data-title="Google+"></a></li>
+            
+            
+                <li><a href="https://dribbble.com/pixelhint" class="dribble" target="_blank" data-title="Dribble"></a></li>
+            
+            
+            
+            
+        </ul><!-- end social -->
+
+        <div class="rights">
+            <p>Copyright © 2014 magnetic.</p>
+            <p>Template by <a href="http://pixelhint.com/magnetic-free-html5-responsive-photography-website-template/" target="_blank" rel="noopener">Pixelhint.com</a></p>
+            <p>Hexo Theme by <a href="http://www.codeblocq.com/" target="_blank" rel="noopener">Jonathan K.</a></p>
+        </div><!-- end rights -->
+    </div ><!-- end footer -->
+</header><!-- end header -->
+
+
+<!-- Main Content -->
+<section class="main clearfix">
+
+    <section class="top" style="background: url('http://placehold.it/1300x500');">
+        <div class="wrapper content_header clearfix">
+            
+
+<div class="work_nav">
+
+    <ul class="btn clearfix">
+        
+        <li><a href="/2017/04/05/quiz%20menu%20system/" class="previous" data-title="quiz menu system"></a></li>
+        
+        <li><a href="/" class="grid" data-title="Portfolio"></a></li>
+        
+        <li><a href="/2016/10/08/Using%20sockets%20to%20transfer%20%EF%AC%81les%20between%20client%20and%20server/" class="next" data-title="Using sockets to ..."></a></li>
+        
+    </ul>
+
+</div><!-- end work_nav -->
+            <h1 class="title">Café Dansa Database</h1>
+        </div>
+    </section><!-- end top -->
+
+    <section class="wrapper">
+        <div class="content">
+
+            <!-- Gallery -->
+            
+
+            <!-- Content -->
+            <hr>
+<p>代写完成–Java GUI + JDBC 连接 Mysql: 咖啡馆人员管理系统</p>
+<hr>
+<p>Your dance instructor has asked you to design a quick and easy program to keep track of the some pertinent data for the dancers at Café Dansa Club, an establishment offering classes in various styles of dancing. Currently no such program exists and it is difficult to update the information of the dancers.</p>
+<p>Write a Java program that allows the user to manage a simple dancers’ database with ability to display, add, edit/modify, and delete the dancers who frequent the Café Dansa Club. Sample GUI is provided as one example of an implementation. There is a lot of flexibility however for your vision of how to design and implement this database, as long as your implementation has all of the required functionality.</p>
+<a id="more"></a>
+
+<p>Your program must contain/do:</p>
+<ol>
+<li><p>A Dancer class that contains in order at least name, dance preference style, proficiency, length of dancing, phone, and email. The class should also include a default and an overloaded constructor, accessors and mutators, toString() method, and equals() method.</p>
+</li>
+<li><p>Read and display the information about the dancer in a GUI-based driver. You cannot decide for yourself the back end: it must be relational DB such as SQL. An example of data with comma delimited text file that you must convert to a table to be mined with SQL statements might be:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Anna,Pavlova,ballet,expert,32,425-125-9874,ana.pavlova@dance.com</span><br><span class="line">Vaslav,Nijinsky,ballet,master,40,206-675-1280,nijinsky@ballet.net</span><br><span class="line">Fred,Astaire,ballroom,master,360,310-387-4499,astaire@ballet.net</span><br><span class="line">Sammy,Davis,tap,expert,27,909-123-6578,davis@pop.com</span><br><span class="line">Gene,Kelly,ballroom,beginner,12,707-945-7765,kelly@ballroom.com</span><br><span class="line">Mikhail,Baryshnikov,ballet,intermediate,,baryshnikov@ballet.com</span><br><span class="line">Michael,Jackson,modern pop,advanced,9,303-313-5455,michael@pop.com</span><br><span class="line">Luara,como Lino,samba,advanced,18,452-257-6733,nijinsky@ballet.com</span><br><span class="line">Magan,Gopal,salsa,intemediate,6,206-675-1280,gopal@salsa.com</span><br><span class="line">Sukshinder Shinda,bhangra,beginner,2,661-038-9512,sshinda@bhangra.com</span><br><span class="line">Michael,Ryan Flatley,irish,intemediate,30,254-113-6457,flastley@irish.com</span><br><span class="line">Rags,Sharqi,baladi,advanced,14,684-031-3210,rags.sharqi@baladi.com</span><br><span class="line">Cherie,Magnus,milonga,beginner,5,206-675-1280,magus@milonga.com</span><br><span class="line">Kahte,Culevski,balkan,advanced,8,321-741-3771,kculevski@balkanbeat.net</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Ability to add new dancers, modify existing ones, and delete dancers from the database.<br>Checks should be performed not to add duplicate entries of the same dancer, and that all of the required fields are valid and included when adding/editing a dancer.</p>
+</li>
+<li><p>A data structure of dancers to hold the members data. This should be an ArrayList.</p>
+</li>
+<li><p>Javadocs, description of the program, and comments.</p>
+</li>
+<li><p>Menus that synchronize with corresponding buttons and with at least the following menu choices:</p>
+<ul>
+<li>File with Clear, Print, and Exit menu items.</li>
+<li>Sort with Sort by First Name, Last Name and by Years of experience menu items.</li>
+<li>Action with Add, Delete, Edit (with choice to save or cancel changes) menu items, and Search by multiple fields: name, level, style, and years.</li>
+<li>Help with an About menu item for a meaningful About form.</li>
+</ul>
+</li>
+<li><p>The lab should start with an exciting Splash Screen (as a separate Thread) with progress bar that closes itself after so many seconds.</p>
+</li>
+<li><p>Well designed and efficient GUI with images and ease to use.</p>
+</li>
+<li><p>Print the information for a specified dancer (with the Print JButton) and print the entire form (from the File -&gt; Print selection).</p>
+</li>
+<li><p>Sepate forms (classes) for Adding and Editing a dancer that use a Validation class with regular expression for validating input into the forms.</p>
+</li>
+<li><p>Enable and disable JButtons and menu choices appropriately (so, for example, if the Edit JButton is pressed the others, including the corresponding menu choices and the JList, should be disabled until the editing is done).</p>
+</li>
+<li><p>You DB should contain at least three properly interconnected tables: Dancers, DanceStyles, and DanceLevels.</p>
+</li>
+<li><p>Optionally, consider adding images for each dancer and multimedia (video/audio of a sample dance style for each dance style).</p>
+</li>
+</ol>
+<p>Screen Captures:<br><img src="/images/2019-05-31-22-00-22-877.png" alt=""><br><img src="/images/2019-05-31-22-00-32-341.png" alt=""><br><img src="/images/2019-05-31-22-00-40-054.png" alt=""></p>
+
+
+            <!-- Tags -->
+            
+
+
+<div class="tags">
+    <a href="/tags/JAVA/">JAVA</a> <a href="/tags/GUI/">GUI</a> <a href="/tags/JDBC/">JDBC</a> <a href="/tags/Mysql/">Mysql</a>
+</div>
+
+
+
+            <!-- Comments -->
+            <div>
+                
+
+
+
+
+            </div>
+        </div><!-- end content -->
+    </section>
+</section><!-- end main -->
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="/js/jquery.js"></script>
+
+<!-- Custom Code -->
+<script src="/js/main.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>

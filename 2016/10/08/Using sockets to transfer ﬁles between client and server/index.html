@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="代写完成–Java Socket 文件交换
+
+Write two applications, a server and a client, that transfer ﬁles between each other using sockets.">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Using sockets to transfer ﬁles between client and server"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Hexo"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content=""/>
+    
+
+    <!-- Title -->
+    
+    <title>Using sockets to transfer ﬁles between client and server - Hexo</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!--Favicon-->
+    
+
+</head>
+
+<body>
+
+<!-- Menu -->
+<!-- Navigation -->
+<header>
+    <div class="logo">
+        <a href="/">Hexo</a>
+    </div><!-- end logo -->
+
+    <div id="menu_icon"></div>
+    <nav>
+        <ul>
+            
+            <li>
+                <a href="/">主页</a>
+            </li>
+            
+            <li>
+                <a href="/archives">档案</a>
+            </li>
+            
+        </ul>
+    </nav><!-- end navigation menu -->
+
+    <div class="footer clearfix">
+        <ul class="social clearfix">
+            
+            
+                <li><a href="https://www.facebook.com/" class="fb" target="_blank" data-title="Facebook"></a></li>
+            
+            
+                <li><a href="https://www.behance.net/" class="behance" target="_blank" data-title="Behance"></a></li>
+            
+            
+                <li><a href="https://plus.google.com/+Pixelhint/posts" class="google" target="_blank" data-title="Google+"></a></li>
+            
+            
+                <li><a href="https://dribbble.com/pixelhint" class="dribble" target="_blank" data-title="Dribble"></a></li>
+            
+            
+            
+            
+        </ul><!-- end social -->
+
+        <div class="rights">
+            <p>Copyright © 2014 magnetic.</p>
+            <p>Template by <a href="http://pixelhint.com/magnetic-free-html5-responsive-photography-website-template/" target="_blank" rel="noopener">Pixelhint.com</a></p>
+            <p>Hexo Theme by <a href="http://www.codeblocq.com/" target="_blank" rel="noopener">Jonathan K.</a></p>
+        </div><!-- end rights -->
+    </div ><!-- end footer -->
+</header><!-- end header -->
+
+
+<!-- Main Content -->
+<section class="main clearfix">
+
+    <section class="top" style="background: url('http://placehold.it/1300x500');">
+        <div class="wrapper content_header clearfix">
+            
+
+<div class="work_nav">
+
+    <ul class="btn clearfix">
+        
+        <li><a href="/2017/02/06/Caf%C3%A9%20Dansa%20Database/" class="previous" data-title="Café Dansa Database"></a></li>
+        
+        <li><a href="/" class="grid" data-title="Portfolio"></a></li>
+        
+        <li><a href="/2016/09/18/MenuManager%20-%20OOP%20and%20GUI/" class="next" data-title="MenuManager - OOP..."></a></li>
+        
+    </ul>
+
+</div><!-- end work_nav -->
+            <h1 class="title">Using sockets to transfer ﬁles between client and server</h1>
+        </div>
+    </section><!-- end top -->
+
+    <section class="wrapper">
+        <div class="content">
+
+            <!-- Gallery -->
+            
+
+            <!-- Content -->
+            <hr>
+<p>代写完成–Java Socket 文件交换</p>
+<hr>
+<p>Write two applications, a server and a client, that transfer ﬁles between each other using sockets.</p>
+<a id="more"></a>
+<p>The server application should:</p>
+<ul>
+<li><p>Run continuously.</p>
+</li>
+<li><p>Use an Executor to manage a ﬁxed thread-pool with 10 connections.</p>
+</li>
+<li><p>Following a request by a client, query the local folder serverFiles and return a list of the ﬁles found there to the same client.</p>
+</li>
+<li><p>Send a ﬁle from serverFiles to a client that requests it.</p>
+</li>
+<li><p>Read a ﬁle from a client and place it in the serverFiles folder.</p>
+</li>
+<li><p>Log every request by a client in a local ﬁle log.txt with the format:</p>
+</li>
+</ul>
+<p>date:time:client IP address:request.</p>
+<p>The client application should:</p>
+<ul>
+<li><p>Accept one of the follow commands as command line arguments, and performs the stated task:</p>
+<ul>
+<li>list, which lists all of the ﬁles on the server’s folder serverFiles.</li>
+<li>get fname, which requests the server send the ﬁle fname. This should then be read and saved to the client’s local folder clientFiles.</li>
+<li>put fname, which sends the ﬁle fname from the client’s local folder clientFiles and sends it to the server (to be placed in serverFiles).</li>
+</ul>
+</li>
+<li><p>Quits after completing each command.</p>
+</li>
+</ul>
+<p>The listening port should be 8888. Your solution should work in principle for any ﬁles, not just those provided.</p>
+<p>The communication protocol between the server and its clients is not speciﬁed. You are free to devise any protocol you wish, provided the above requirements are met.</p>
+<p>For the purposes of this coursework both the client and the server should run on the same machine, i.e. with hostname localhost. They should not attempt to access each other’s disk space; all communication must be via sockets. UNIX ﬁlenames should be used.</p>
+<p>Both applications should have basic error handling and your code should adhere to the Java coding standards.</p>
+
+
+            <!-- Tags -->
+            
+
+
+<div class="tags">
+    <a href="/tags/JAVA/">JAVA</a> <a href="/tags/Socket/">Socket</a>
+</div>
+
+
+
+            <!-- Comments -->
+            <div>
+                
+
+
+
+
+            </div>
+        </div><!-- end content -->
+    </section>
+</section><!-- end main -->
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="/js/jquery.js"></script>
+
+<!-- Custom Code -->
+<script src="/js/main.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>

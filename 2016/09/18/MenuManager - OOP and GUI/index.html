@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="代写完成–Java GUI: 菜单管理系统
+
+We are continuing the MenuManager project by adding a class with methods to read information from a File plus inheritance and a Graphical User Interface (GUI) to our MenuManager project.">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="MenuManager - OOP and GUI"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Hexo"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content=""/>
+    
+
+    <!-- Title -->
+    
+    <title>MenuManager - OOP and GUI - Hexo</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!--Favicon-->
+    
+
+</head>
+
+<body>
+
+<!-- Menu -->
+<!-- Navigation -->
+<header>
+    <div class="logo">
+        <a href="/">Hexo</a>
+    </div><!-- end logo -->
+
+    <div id="menu_icon"></div>
+    <nav>
+        <ul>
+            
+            <li>
+                <a href="/">主页</a>
+            </li>
+            
+            <li>
+                <a href="/archives">档案</a>
+            </li>
+            
+        </ul>
+    </nav><!-- end navigation menu -->
+
+    <div class="footer clearfix">
+        <ul class="social clearfix">
+            
+            
+                <li><a href="https://www.facebook.com/" class="fb" target="_blank" data-title="Facebook"></a></li>
+            
+            
+                <li><a href="https://www.behance.net/" class="behance" target="_blank" data-title="Behance"></a></li>
+            
+            
+                <li><a href="https://plus.google.com/+Pixelhint/posts" class="google" target="_blank" data-title="Google+"></a></li>
+            
+            
+                <li><a href="https://dribbble.com/pixelhint" class="dribble" target="_blank" data-title="Dribble"></a></li>
+            
+            
+            
+            
+        </ul><!-- end social -->
+
+        <div class="rights">
+            <p>Copyright © 2014 magnetic.</p>
+            <p>Template by <a href="http://pixelhint.com/magnetic-free-html5-responsive-photography-website-template/" target="_blank" rel="noopener">Pixelhint.com</a></p>
+            <p>Hexo Theme by <a href="http://www.codeblocq.com/" target="_blank" rel="noopener">Jonathan K.</a></p>
+        </div><!-- end rights -->
+    </div ><!-- end footer -->
+</header><!-- end header -->
+
+
+<!-- Main Content -->
+<section class="main clearfix">
+
+    <section class="top" style="background: url('http://placehold.it/1300x500');">
+        <div class="wrapper content_header clearfix">
+            
+
+<div class="work_nav">
+
+    <ul class="btn clearfix">
+        
+        <li><a href="/2016/10/08/Using%20sockets%20to%20transfer%20%EF%AC%81les%20between%20client%20and%20server/" class="previous" data-title="Using sockets to transfer ﬁles between c..."></a></li>
+        
+        <li><a href="/" class="grid" data-title="Portfolio"></a></li>
+        
+        <li><a href="/2016/09/18/Self%20Introduction/" class="next" data-title="Self Introdcution"></a></li>
+        
+    </ul>
+
+</div><!-- end work_nav -->
+            <h1 class="title">MenuManager - OOP and GUI</h1>
+        </div>
+    </section><!-- end top -->
+
+    <section class="wrapper">
+        <div class="content">
+
+            <!-- Gallery -->
+            
+
+            <!-- Content -->
+            <hr>
+<p>代写完成–Java GUI: 菜单管理系统</p>
+<hr>
+<p>We are continuing the MenuManager project by adding a class with methods to read information from a File plus inheritance and a Graphical User Interface (GUI) to our MenuManager project. </p>
+<a id="more"></a>
+
+<ol>
+<li><p><em>[5 points]</em> Do not create another project, work in your project [your pitt id]_MenuManager (from last homework). If you lost points for or had errors in that assignment, take care to fix them before moving on.</p>
+</li>
+<li><p><em>[12 points]</em> Implement the FileManager class. Methods in this class are static and the class has no fields. We will not create objects of this class, but use its static methods. In UML diagrams, static methods (and static variables) are underlined. FileManager class has methods for reading and writing files.  See the figure below.<br><img src="/images/2019-05-31-19-46-22-810.png" alt=""></p>
+</li>
+</ol>
+<ul>
+<li>The following method<br>  <code>public static ArrayList&lt;MenuItem&gt; readItems(String fileName)</code><br>reads all types of dishes from a single file in which each line can be an appetizer, entree, side, or beer. The format of a line in file dishes.txt is<br>  <code>name of dish@@type of the dish@@description of the dish@@calories@@price</code><br>Where “type of the dish” is either “appetizer”, “entree”, “side”, or “beer” (Take a look to the file included dishes.txt). This “type of the dish” determines what kind of object to create, which class to use: Appetizer, Entree, Side, or Beer. Then the object is added to an ArrayList<MenuItem>. Since all these classes extend MenuItem, objects of them can be “treated” generically as MenuItem objects. </li>
+<li>The method<br><code>public static void writeMenu( String fileName, ArrayList&lt;Menu&gt; menus )</code><br>writes a file (use String fileName parameter) with the information of all the menus in the ArrayList<Menu> menus. You are free of choosing the format in which the data is written, but for each Menu in the ArrayList, all information should be included: name of the menu, name of each dish, description of each dish, calories and price of each dish, plus the sum of all calories, and the total price.</li>
+</ul>
+<ol start="3">
+<li><em>[18 points]</em> Class MenuItem is defined as the superclass for Appetizer, Entree, Side, and Beer (all these 4 classes extend MenuItem). As a result, the fields and getters/setters previously defined are moved to MenuItem. </li>
+</ol>
+<ul>
+<li>See the following diagram. Implement the class MenuItem.<br><img src="/images/2019-05-31-19-48-51-174.png" alt=""></li>
+<li>Make Appetizer, Entree, Side, and Beer classes extend MenuItem (as indicated in the figure) and remove from them all fields and Getters/Setters. The fields name, description, calories are now inherited. </li>
+<li>Add the field price and the corresponding getter and setter in the class MenuItem. Now all other classes extending MenuItem also inherit price.</li>
+<li>In all classes Appetizer, Entree, Side, and Beer make constructors to receive all field values and to call the super constructor.</li>
+<li>Override toString() in MenuItem in order to return the name attribute.</li>
+<li>Also, override toString() in class Menu (this class is defined in previous Assignment 4) in order to return the name of the menu.<br><img src="/images/2019-05-31-19-49-34-065.png" alt=""></li>
+</ul>
+<ol start="4">
+<li><em>[15 points]</em> Implement the class MenuManager. A MenuManager object has an ArrayList of each of the type of dishes.</li>
+</ol>
+<ul>
+<li><p>The constructor, as you can see in the following figure, receives a fileName. Read this file using the method readItems of the class FileManager and fill a single ArrayList of MenuItem. Now we need to separate the single ArrayList containing MenuItem objects into the four ArrayList of different types. To solve this, create the four ArrayList and implement a loop go through the single ArrayList<MenuItem> and take every dish and put it in the right ArrayList. Hint: user instanceof operator. You can implement this task in a separate method and call it in the constructor. </p>
+</li>
+<li><p>Implement the method randomMenu.  The method creates a Menu object taking randomly one appetizer, one entree, one side, and one beer. The name of the menu is passed in the parameter String name.</p>
+</li>
+<li><p>[Optional: extra credit] Methods minCaloriesMenu() and maxCaloriesMenu() generates the lowest and highest calories menus, respectively. To do the minimum, you have to pick the Entree with the lowest calorie value among entrees. Same for appetizer, side and beer. The method maxCaloriesMenu() do similarly, but selecting highest calories dishes. </p>
+</li>
+<li><p>Add getters and setters to all fields in MenuManager. </p>
+</li>
+</ul>
+<ol start="5">
+<li><em>[45 points]</em> Graphical User Interface. Build the following GUI.<br>FIGURE 1. Main window implemented in class MenuManagerGUI<br><img src="/images/2019-05-31-19-50-37-309.png" alt=""><br>FIGURE 2. Secondary window for displaying the details of a Menu, also implemented in MenuManagerGUI class<br><img src="/images/2019-05-31-19-50-54-244.png" alt=""></li>
+</ol>
+<ul>
+<li>Create the class MenuManagerGUI containing all graphic components and a MenuManager object. Also contains a main(String[] args) method. </li>
+<li>Declare ALL components (all JLabel, JFrame, JButton, JComboBox, JTextField, etc) as fields in MenuManagerGUI.</li>
+<li>Make sure you declare a MenuManager object as a field of the MenuManagerGUI class. </li>
+<li>The constructor of the class MenuManagerGUI should:<br>▪    Create the MenuManager object, which loads the data from the file.<br>▪    Initialize and place all graphic components<br>▪    Load the ArrayLists of MenuManager object into the comboboxes. In other words, fill the comboboxes in the main window with the ArrayList of appetizers, entrees, sides and beers that are contained in the class MenuManager.</li>
+<li>The execution of the MenuManagerGUI.main method does the following:<br>▪    Creates a MenuManagerGUI object calling the constructor explained before<br>▪    Set the JFrame visible, so the main window appears</li>
+<li>The main window in the GUI gives you four options to generate Menu objects. These four options correspond to the buttons:<br>▪    “Create Menu with these dishes” button take the selected elements in the four comboboxes and creates a menu. Just before creating the menu object, it asks the user to input a name for the menu. The newly created menu is added to the list at the side.<br>▪    “Generate a Random Menu”: this button asks the user to input a name for the new menu and then uses the method randomMenu in class MenuManager. The random menu generated is then added to the list in the right side.<br>▪    [Optional: extra credit] “Generate a Minimum Calories Menu”: similarly than the previous button but now using the method minCaloriesMenu() from MenuManager.<br>▪    [Optional: extra credit] “Generate a Maximum Calories Menu”: similarly than the previous button but now using the method maxCaloriesMenu() from MenuManager.</li>
+<li>The list of the right side is where generated menus are placed. The list shows the menus by their names. For achieving this, make sure you override the method toString in class Menu.</li>
+<li>The button Details (FIGURE 2) displays the secondary window filling all the fields contained there (all textfields and textareas) with the information of the selected Menu in the list of generated menus in the main window (right side in FIGURE 1). Note that the name of the menu selected is in the title of the Details window (FIGURE 2).  If no menu is selected in the list, then the secondary window is not shown.</li>
+<li>The button “Delete all” removes all Menu elements from the list.</li>
+<li>The button “Save to File” writes a file “data/menus.txt” with the whole data of the menus in the list. Use the method writeMenus from the FileManager class.</li>
+<li>All text fields in the secondary window (FIGURE 2) are “read only”. This mean their values are filled by the program but the user cannot change them.</li>
+</ul>
+<ol start="6">
+<li><em>[5 points]</em> Correct indentation, naming conventions, and style conventions.</li>
+</ol>
+
+
+            <!-- Tags -->
+            
+
+
+<div class="tags">
+    <a href="/tags/JAVA/">JAVA</a> <a href="/tags/GUI/">GUI</a>
+</div>
+
+
+
+            <!-- Comments -->
+            <div>
+                
+
+
+
+
+            </div>
+        </div><!-- end content -->
+    </section>
+</section><!-- end main -->
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="/js/jquery.js"></script>
+
+<!-- Custom Code -->
+<script src="/js/main.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>

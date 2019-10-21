@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="代写完成–Java GUI: 九宫格游戏
+
+IntroductionIn this assignment, you are going to complete a logic-based game called Sudoku. For more details regarding this game, you may check its Wikipedia page here.There are 2 parts in this assignment: Part A and Part B. Implement ALL routines in part A and in part B.">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Sudoku"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Hexo"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content=""/>
+    
+
+    <!-- Title -->
+    
+    <title>Sudoku - Hexo</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!--Favicon-->
+    
+
+</head>
+
+<body>
+
+<!-- Menu -->
+<!-- Navigation -->
+<header>
+    <div class="logo">
+        <a href="/">Hexo</a>
+    </div><!-- end logo -->
+
+    <div id="menu_icon"></div>
+    <nav>
+        <ul>
+            
+            <li>
+                <a href="/">主页</a>
+            </li>
+            
+            <li>
+                <a href="/archives">档案</a>
+            </li>
+            
+        </ul>
+    </nav><!-- end navigation menu -->
+
+    <div class="footer clearfix">
+        <ul class="social clearfix">
+            
+            
+                <li><a href="https://www.facebook.com/" class="fb" target="_blank" data-title="Facebook"></a></li>
+            
+            
+                <li><a href="https://www.behance.net/" class="behance" target="_blank" data-title="Behance"></a></li>
+            
+            
+                <li><a href="https://plus.google.com/+Pixelhint/posts" class="google" target="_blank" data-title="Google+"></a></li>
+            
+            
+                <li><a href="https://dribbble.com/pixelhint" class="dribble" target="_blank" data-title="Dribble"></a></li>
+            
+            
+            
+            
+        </ul><!-- end social -->
+
+        <div class="rights">
+            <p>Copyright © 2014 magnetic.</p>
+            <p>Template by <a href="http://pixelhint.com/magnetic-free-html5-responsive-photography-website-template/" target="_blank" rel="noopener">Pixelhint.com</a></p>
+            <p>Hexo Theme by <a href="http://www.codeblocq.com/" target="_blank" rel="noopener">Jonathan K.</a></p>
+        </div><!-- end rights -->
+    </div ><!-- end footer -->
+</header><!-- end header -->
+
+
+<!-- Main Content -->
+<section class="main clearfix">
+
+    <section class="top" style="background: url('http://placehold.it/1300x500');">
+        <div class="wrapper content_header clearfix">
+            
+
+<div class="work_nav">
+
+    <ul class="btn clearfix">
+        
+        <li><a href="/2019/03/18/The%20Deterministic%20Crowds%20Protocol/" class="previous" data-title="The Deterministic Crowds Protocol"></a></li>
+        
+        <li><a href="/" class="grid" data-title="Portfolio"></a></li>
+        
+        <li><a href="/2018/04/06/Guess%20Word%20Game/" class="next" data-title="Guess Word Game"></a></li>
+        
+    </ul>
+
+</div><!-- end work_nav -->
+            <h1 class="title">Sudoku</h1>
+        </div>
+    </section><!-- end top -->
+
+    <section class="wrapper">
+        <div class="content">
+
+            <!-- Gallery -->
+            
+
+            <!-- Content -->
+            <hr>
+<p>代写完成–Java GUI: 九宫格游戏</p>
+<hr>
+<h4 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h4><p>In this assignment, you are going to complete a logic-based game called Sudoku. For more details regarding this game, you may check its Wikipedia page here.<br>There are 2 parts in this assignment: Part A and Part B. Implement ALL routines in part A and in part B.</p>
+<a id="more"></a>
+<h4 id="Fundamentals"><a href="#Fundamentals" class="headerlink" title="Fundamentals"></a>Fundamentals</h4><p><img src="/images/2019-05-31-21-02-28-911.png" alt=""><br>A typical Sudoku puzzle has a 9x9 board. The goal of Sudoku is simple: fill in the numbers 1-9 exactly once in every row, column, and 3x3 region. It is common to use pencil-mark to plot in possible numbers in each cell. The image below shows the pencil-mark, indicated by the small numbers in blue color. Your completed program should be able to provide the correct pencil-mark to the user.</p>
+<p><img src="/images/2019-05-31-21-02-49-263.png" alt=""><br>In addition, your completed program will be able to solve a Sudoku puzzle by clicking the “Solution” button. The following shows the solution of the above puzzle:<br><img src="/images/2019-05-31-21-03-04-788.png" alt=""><br>Your completed program will shade the box in grey color if the user input has no conflict. For example, if the user changed the input in box “H-VI” to 8, the corresponding conflicted row, column, and subregion will be unshaded as shown below.<br><img src="/images/2019-05-31-21-03-20-416.png" alt="">  </p>
+<h4 id="Description-Part-A"><a href="#Description-Part-A" class="headerlink" title="Description: Part A"></a>Description: Part A</h4><ul>
+<li><p>Subset Class<br>Open Subset.java and complete the followings of Subset class:<br>Complete the method isValid(). This method will return a boolean of true if the subset contains 1-9 exactly once. For example, if the subset contains [2,3,6,9,7,1,8,4,5], then isValid() should return true. And it will return false if some numbers are missing or repeated. Complete the method markings(). This method will return a boolean array of size 10, say a, where a[i] is true if the subset didn’t contain i.<br>For example, if the subset contains [0,0,6,5,8,0,7,0,9], then we should return a=[F,T,T,T,T,F,F,F,F,F]. If the subset contains [1,2,3,4,5,6,7,8,9], then this method will return a=[T,F,F,F,F,F,F,F,F,F].<br>Complete the method conflict(int n). This method will return true if the subset contains input n.<br>Hint: you may want to use the method getValue() to obtain the value in cell.<br>Row Class, Column Class, and Subregion Class</p>
+</li>
+<li><p>After completing Subset.java, there are three methods to check the validity, markings, and conflicts for a subset of size 9. The game of Sudoku requires these conditions to be checked in row, column, and subregion. So we are going to extract it and put it into the subset for checking. Note that the following classes are inherited from the Subset class.</p>
+</li>
+<li><p>Open Row.java. The constructor of Row class will initialize the variable c, where c is an array of cells of size 9 initialized in subset. This variable c should contain the cells of the given row from the matrix.</p>
+</li>
+<li><p>Open Column.java. Similarly, the constructor of Column class will initialize the variable c. This variable c should contain the cells of the given column from the matrix.</p>
+</li>
+<li><p>Open Subregion.java. Again, the constructor of Subregion class will initialize the variable c. This variable c contains the cells of the given subregion from the matrix.<br>Hint: you may want to use the method setRow(), setColumn(), and setSubregion() of Cell class for this part.</p>
+</li>
+<li><p>Cell Class<br>Open Cell.java and complete the following methods of Cell class.<br>Complete the method getPencilMarking(). This method will return a boolean array pencilMarking, where pencilMarking[i] is true if all corresponding row, column, and subregion didn’t contain i.<br>Hint: Use the method markings() that you completed in Subset.java for this.<br>Complete the method conflict(). This method will return true if the input value i conflicts with its row, column, or subregion.<br>Hint: Use the OR operator.</p>
+</li>
+<li><p>Board<br>Open Board.java and complete the following methods of Board class.<br>Complete the methods solve() and solve(int k). These two methods are used to solve a Sudoku puzzle. Solving a Sudoku puzzle is quite complicated. You can write your code according to the pseudocode provided in the Appendix.<br>Complete the method generate(). This method generates a random Sudoku puzzle. Again, we provided the pseudocode for you in the Appendix.</p>
+</li>
+</ul>
+<p>After finishing part A, you can try to build and run main(). The output should look like this:<br><img src="/images/2019-05-31-21-04-00-600.png" alt=""><br>Note that the program generates a random Sudoku puzzle every time, so your output should look a bit different from the above.</p>
+<p>Also, you need to open interfce.java and disable the import/export button if you want to run it before finishing Part B. Otherwise, you will have an error because your IO.java is incomplete.</p>
+<p>If your implementation is correct, you should be able to use Generate, Solution, and PencilMarkings. Also, the conflict checking function should work (see Introduction).</p>
+<h4 id="Description-Part-B"><a href="#Description-Part-B" class="headerlink" title="Description: Part B"></a>Description: Part B</h4><h5 id="File-output"><a href="#File-output" class="headerlink" title="File output"></a>File output</h5><p>Open IO.java. Complete the method for file output. After you have completed this method, your program should be able to perform Export. For example, the following shows an unfinished Sudoku puzzle:<br><img src="/images/2019-05-31-21-04-28-976.png" alt=""><br>By clicking the Export button, the following window will show up:<br><img src="/images/2019-05-31-21-04-46-953.png" alt=""><br>which allow the user to save the puzzle.<br>There are three parts in the puzzle that you need to save: value, solution, and the given puzzle.</p>
+<ul>
+<li><p>Value: the current value stored in a cell, can be user input or original puzzle generated by the program.</p>
+</li>
+<li><p>Solution: the solution to this puzzle.</p>
+</li>
+<li><p>Given: a boolean that describes whether the cell value is generated by the algorithm.</p>
+</li>
+</ul>
+<p>Hint: You may need to use these methods: getBoard(), getValue(), getSolution(), and getGiven(). Note: You can store the puzzle in any way you want as long as you can load it back to the program.</p>
+<h5 id="File-input"><a href="#File-input" class="headerlink" title="File input"></a>File input</h5><p>Open IO.java. Complete the method for file input. After you have completed this method, your program should be able to perform Import to input a previously saved puzzle. For example, here is a new puzzle after the Generate button is clicked.<br><img src="/images/2019-05-31-21-05-10-890.png" alt=""><br>You can click the Import button and the following window will pop up.<br><img src="/images/2019-05-31-21-05-24-418.png" alt=""><br>Select and open the file “123.data”. Then, the user can continue to play this previously saved puzzle.<br><img src="/images/2019-05-31-21-05-38-525.png" alt=""></p>
+
+
+            <!-- Tags -->
+            
+
+
+<div class="tags">
+    <a href="/tags/JAVA/">JAVA</a> <a href="/tags/GUI/">GUI</a>
+</div>
+
+
+
+            <!-- Comments -->
+            <div>
+                
+
+
+
+
+            </div>
+        </div><!-- end content -->
+    </section>
+</section><!-- end main -->
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="/js/jquery.js"></script>
+
+<!-- Custom Code -->
+<script src="/js/main.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>

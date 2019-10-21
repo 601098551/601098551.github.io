@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="代写完成–Java命令行菜单程序：考试系统
+
+BackgroundAs described in the handout for Part 1, the overall aim of the assignment is to develop a menu-driven program to administer a quiz test.
+In Part 1, you have implemented the classes to represent the quiz questions and answers. You have also written programs to test these classes. In particular, you have written a program to read a number of questions from a text ﬁle, administer the questions, obtain the answers, and print out the answers.">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="quiz menu system"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Hexo"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content=""/>
+    
+
+    <!-- Title -->
+    
+    <title>quiz menu system - Hexo</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!--Favicon-->
+    
+
+</head>
+
+<body>
+
+<!-- Menu -->
+<!-- Navigation -->
+<header>
+    <div class="logo">
+        <a href="/">Hexo</a>
+    </div><!-- end logo -->
+
+    <div id="menu_icon"></div>
+    <nav>
+        <ul>
+            
+            <li>
+                <a href="/">主页</a>
+            </li>
+            
+            <li>
+                <a href="/archives">档案</a>
+            </li>
+            
+        </ul>
+    </nav><!-- end navigation menu -->
+
+    <div class="footer clearfix">
+        <ul class="social clearfix">
+            
+            
+                <li><a href="https://www.facebook.com/" class="fb" target="_blank" data-title="Facebook"></a></li>
+            
+            
+                <li><a href="https://www.behance.net/" class="behance" target="_blank" data-title="Behance"></a></li>
+            
+            
+                <li><a href="https://plus.google.com/+Pixelhint/posts" class="google" target="_blank" data-title="Google+"></a></li>
+            
+            
+                <li><a href="https://dribbble.com/pixelhint" class="dribble" target="_blank" data-title="Dribble"></a></li>
+            
+            
+            
+            
+        </ul><!-- end social -->
+
+        <div class="rights">
+            <p>Copyright © 2014 magnetic.</p>
+            <p>Template by <a href="http://pixelhint.com/magnetic-free-html5-responsive-photography-website-template/" target="_blank" rel="noopener">Pixelhint.com</a></p>
+            <p>Hexo Theme by <a href="http://www.codeblocq.com/" target="_blank" rel="noopener">Jonathan K.</a></p>
+        </div><!-- end rights -->
+    </div ><!-- end footer -->
+</header><!-- end header -->
+
+
+<!-- Main Content -->
+<section class="main clearfix">
+
+    <section class="top" style="background: url('http://placehold.it/1300x500');">
+        <div class="wrapper content_header clearfix">
+            
+
+<div class="work_nav">
+
+    <ul class="btn clearfix">
+        
+        <li><a href="/2017/06/18/Eats%20system/" class="previous" data-title="Eats system"></a></li>
+        
+        <li><a href="/" class="grid" data-title="Portfolio"></a></li>
+        
+        <li><a href="/2017/02/06/Caf%C3%A9%20Dansa%20Database/" class="next" data-title="Café Dansa Databa..."></a></li>
+        
+    </ul>
+
+</div><!-- end work_nav -->
+            <h1 class="title">quiz menu system</h1>
+        </div>
+    </section><!-- end top -->
+
+    <section class="wrapper">
+        <div class="content">
+
+            <!-- Gallery -->
+            
+
+            <!-- Content -->
+            <hr>
+<p>代写完成–Java命令行菜单程序：考试系统</p>
+<hr>
+<h4 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h4><p>As described in the handout for Part 1, the overall aim of the assignment is to develop a menu-driven program to administer a quiz test.</p>
+<p>In Part 1, you have implemented the classes to represent the quiz questions and answers. You have also written programs to test these classes. In particular, you have written a program to read a number of questions from a text ﬁle, administer the questions, obtain the answers, and print out the answers.</p>
+<a id="more"></a>
+<p>Building on the work that you have done for Part 1, in this Part 2, you are required to do the tasks described below.</p>
+<p>Besides the information given in the tasks below, please refer to Part 1 of the Assignment for any other information you may need.</p>
+<h4 id="Task-1"><a href="#Task-1" class="headerlink" title="Task 1"></a>Task 1</h4><p>Modify the classes QuizQuestion and QuizAnswer and their subclasses to use ArrayList instead of array whenever you need to maintain a collection.</p>
+<p>Test your classes with the provided BasicTester program.</p>
+<h4 id="Task-2"><a href="#Task-2" class="headerlink" title="Task 2"></a>Task 2</h4><p>(For Tasks 2, 3 and 4, you must also use ArrayList whenever you need to maintain collections.)<br>This task does not required you to do any exception handling. (That will done in Tasks 3 and 4).<br>Write a menu program called QuizMenu. The program displays the menu with the options shown below:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">======== </span><br><span class="line">Options:</span><br><span class="line">======== </span><br><span class="line">R: Read question details from a text file </span><br><span class="line">A: Administer the quiz test </span><br><span class="line">F: Administer the quiz test with option to quit </span><br><span class="line">D: Display the answers on the screen </span><br><span class="line">W: Write the answers to a text file </span><br><span class="line">Q: Quit</span><br><span class="line"></span><br><span class="line">Please select an option:</span><br></pre></td></tr></table></figure>
+
+<p>Other than the minimum required for the program to compile, no exception handling is required for this task.</p>
+<p><em>Option R</em>. The program asks for the name of the text ﬁle (e.g. qq.txt) and reads the questions from this ﬁle. The ﬁle name (to be entered) includes the ﬁle extension. The ﬁle format is exactly as described in Part 1.</p>
+<p><em>Option A</em>. The way the program administers the quiz questions and obtains the answers is exactly as described in Part 1.</p>
+<p><em>Option F</em>. (‘F’ stands for ‘Flexible administration of the quiz test’). With this option, after answering a quiz question, the user will be asked if he/she wants to continue or not. If the user chooses to quit early, options D and W are still available to display and save the results of the questions have been answered. The behavior of the program is illustrated with a sample run below:  </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">======== </span><br><span class="line">Options:</span><br><span class="line">======== </span><br><span class="line">R: Read question details from a text file </span><br><span class="line">A: Administer the quiz test </span><br><span class="line">F: Administer the quiz test with option to quit </span><br><span class="line">D: Display the answers on the screen W: Write the answers to a text file </span><br><span class="line">Q: Quit</span><br><span class="line"></span><br><span class="line">Please select an option: f</span><br><span class="line"></span><br><span class="line">Question 1 </span><br><span class="line">A try statement must have a catch block. True or false?</span><br><span class="line">Type true or false in lower case: true </span><br><span class="line"></span><br><span class="line">Do you want to continue? (y/n): y</span><br><span class="line">Question 2 </span><br><span class="line">FileNotFoundException is a/an _____ exception. Fill in the blank Type in your answer: checked Do you want to continue? (y/n): n</span><br><span class="line"></span><br><span class="line">======== </span><br><span class="line">Options:</span><br><span class="line">======== </span><br><span class="line">R: Read question details from a text file </span><br><span class="line">A: Administer the quiz test </span><br><span class="line">F: Administer the quiz test with option to quit </span><br><span class="line">D: Display the answers on the screen W: Write the answers to a text file </span><br><span class="line">Q: Quit</span><br><span class="line"></span><br><span class="line">Please select an option:</span><br></pre></td></tr></table></figure>
+<p><em>Option D</em>. The way the program displays the answer is illustrated by the example below:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Question 1</span><br><span class="line">TrueFalseAnswer[quizQuestion: TrueFalseQuestion[question: A try statement must have a catch block., correctAnswer: false] , userAnswer: true, result: I]</span><br><span class="line"></span><br><span class="line">Question 2 </span><br><span class="line">WordAnswer[quizQuestion: WordQuestion[question: FileNotFoundException is a/an _____ exception. Fill in the blank., correctAnswer: checked, caseSensitive: false] , userAnswer: checked, result: C]</span><br><span class="line"></span><br><span class="line">Number of questions: 5 Number of answers: 2 </span><br><span class="line">Number of correct answers: 1</span><br><span class="line">Number of incorrect answers: 1</span><br></pre></td></tr></table></figure>
+<p>As illustrated above, the display of the result of a quiz test ends with four lines of summary.</p>
+<p><em>Option W</em>. The program asks for the name of the ﬁle to save the result to (e.g. result.txt). The information to be written and the format are exactly as for displaying the result on the screen.</p>
+<p>Hints:</p>
+<ul>
+<li><p>For each menu option (except “quit”), you should have a method to carry out the required operation.</p>
+</li>
+<li><p>Test your program with both qq.txt and qqe.txt (which has a format error).</p>
+</li>
+</ul>
+<h4 id="Task-3"><a href="#Task-3" class="headerlink" title="Task 3"></a>Task 3</h4><p>The menu-driven program of Task 2 can crash. For Task 3, you are required to enhance the program of Task 2 to prevent it from crashing.</p>
+<p>More speciﬁcally, we want to achieve the following objective:</p>
+<p>When the program carries out the operation required for a menu option, if some exceptional condition arises, the program will display a message to inform the user of the occurrence of the exception, terminate the operation and return to the main menu.</p>
+<p>In this way, the program does not crash, and all the work up to that point (before the failed operation) is preserved and further operations can be taken.</p>
+<p>Make a copy of the previous menu program and call it QuizMenuRobust.java. Modify it to make it robust as described above.</p>
+<h4 id="Task-4"><a href="#Task-4" class="headerlink" title="Task 4"></a>Task 4</h4><p>We now seek to enhance the program of Task 3 to remove some of its shortcomings.</p>
+<p>Examples of shortcomings of program QuizMenuRobust</p>
+<p>It does not make sense to administer a quiz when it has not been read. So ideally, if the user tries to administer a quiz before it is read, the program should display an error message, and terminate the operation and return to the main menu.</p>
+<p>This is not the behavior of program of Task 3. How it behaves depend on whether the list of question instances has been initialized to an empty list or not.</p>
+<ul>
+<li><p>If the list of answer objects has not been initialized, i.e. it is a null object, a message about null pointer exception is displayed before returning to the main menu.</p>
+</li>
+<li><p>If the list has been initialized to an empty ArrayList, the program returns immediately to the main menu because an empty list of questions has been administered.</p>
+</li>
+</ul>
+<p>As another example, if you read the ﬁle qqe.txt, an exception occurs, and the program returns to the main menu. But a number of questions has been read, and the list has a number of question instances. You can see this by choosing option A next.</p>
+<p>This behavior is generally not regarded as being satisfactory. Normally, if an operation like this fails, we would like to restore things to their states prior to the failed operation. (This is what rollback operation in database is about.)</p>
+<p>The state of the menu-driven program</p>
+<p>As mentioned before, if the user tries to administer a quiz before it is read, the program should display an error message, and terminate the operation and return to the main menu.</p>
+<p>In order to make that sort of behavior possible, one solution is to regard the program as what is known as a state machine. By that, we mean we regard the program an entity that can go through a number of states and the state that it is in can aﬀect its behavior.</p>
+<p>As a solution adequate for our purpose, we can regard the program as an entity that can be in one of three states represented by the three constants declared below:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> QUIZ_NOT_READ = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// A quiz has not been read or has not been read successfully.</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// When the program is in this state, there is not available</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// a list of quiz objects to be administered.</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> QUIZ_AVAILABLE = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// A quiz has been read and is available but it has not been</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// administered. When the program is in this state, there is not</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// a list of answer objects to be displayed or saved.</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> QUIZ_TAKEN = <span class="number">3</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// A quiz has been administered, and the answers are available</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// for displaying or saving to file</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// More information related to these states is given below</span></span><br></pre></td></tr></table></figure>
+
+<p>Then we should have a variable – let us call it <code>state</code> – to keep track of the state that the program is in.</p>
+<p>Initially, the state should be <code>QUIZ_NOT_READ</code>. When a quiz is successfully read in, the state should be <code>QUIZ_AVAILABLE</code>. When a quiz is successfully administered, completely or with early exit, the state should be <code>QUIZ_TAKEN</code>.</p>
+<p>Enhancement features</p>
+<p>Make a copy of QuizMenuRobust, change the name to QuizMenuEnhanced, and modify it to implement the enhancement features described below:</p>
+<p><em>For option R (read questions)</em></p>
+<p>E1 If the operation completes successfully, the state must be set to <code>QUIZ_AVAILABLE</code> E2 If the operation fails (and throws an exception),</p>
+<ul>
+<li><p>The list of question objects must be set to null</p>
+</li>
+<li><p>The state must be set to <code>QUIZ_NOT_READ</code></p>
+</li>
+</ul>
+<p>E3 If the user chooses option R when the state is <code>QUIZ_AVAILABLE</code> or <code>QUIZ_TAKEN</code>,</p>
+<ul>
+<li><p>Ask the user if they really want to read a new quiz, and then proceed accordingly.</p>
+</li>
+<li><p>If the user conﬁrms that they want to proceed with reading in a new quiz, then we prepare a “clean sheet” ﬁrst with the following actions</p>
+<ul>
+<li>Set the state to <code>QUIZ_NOT_READ</code></li>
+<li>Set the lists of question and answer objects to null before proceed to reading the questions.</li>
+</ul>
+</li>
+</ul>
+<p>NOTE: If the subsequent reading is completed successfully, the state must be set to <code>QUIZ_AVAILABE</code>. If the subsequent reading fails, the state must be <code>QUIZ_NOT_READ</code>. See E1 and E2 above.</p>
+<p><em>For options A and F (administer the quiz)</em></p>
+<p>E4 If the operation completes successfully, the state must be set to <code>QUIZ_TAKEN</code>.<br>E5 If the operation fails,</p>
+<ul>
+<li><p>The list of answer objects must be set to null</p>
+</li>
+<li><p>the state must be <code>QUIZ_AVAILABE</code></p>
+</li>
+</ul>
+<p>E6 If the user tries option A or F when the state is <code>QUIZ_NOT_READ</code>, display an error message, terminate the operation and return to the main menu.</p>
+<p>E7 If the user tries to administer a quiz when the state is <code>QUIZ_TAKEN</code>,</p>
+<ul>
+<li><p>Ask the user if they really want to take the test again, and then proceed accordingly.</p>
+</li>
+<li><p>If the user conﬁrms that they want to proceed with this option, then</p>
+<ul>
+<li>The list of answer instances must be set to null</li>
+<li>The state must be set to <code>QUIZ_AVAILABLE</code></li>
+</ul>
+</li>
+</ul>
+<p>NOTE: If the subsequent administering operation is completed successfully, the state must be set to <code>QUIZ_TAKEN</code>. If the operation fails, the state must be <code>QUIZ_AVAILABLE</code>. See E4 and E5.</p>
+<p><em>For options D and W (display and save answers)</em></p>
+<p>E8 If the user tries option D or W when the state is not <code>QUIZ_TAKEN</code>, display an error message, terminate the operation and return to the main menu.</p>
+
+
+            <!-- Tags -->
+            
+
+
+<div class="tags">
+    <a href="/tags/JAVA/">JAVA</a> <a href="/tags/Command-line/">Command line</a>
+</div>
+
+
+
+            <!-- Comments -->
+            <div>
+                
+
+
+
+
+            </div>
+        </div><!-- end content -->
+    </section>
+</section><!-- end main -->
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="/js/jquery.js"></script>
+
+<!-- Custom Code -->
+<script src="/js/main.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>
